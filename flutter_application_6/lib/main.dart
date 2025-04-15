@@ -5,6 +5,8 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -15,6 +17,8 @@ class MyApp extends StatelessWidget {
 }
 
 class FirstScreen extends StatefulWidget {
+  const FirstScreen({super.key});
+
   @override
   _FirstScreenState createState() => _FirstScreenState();
 }
@@ -108,12 +112,12 @@ class _FirstScreenState extends State<FirstScreen> {
                   }
                   // Add login logic here if validation passes
                 },
-                child: Text('Login'),
                 style: ElevatedButton.styleFrom(
                   minimumSize: Size(double.infinity, 50),
                   backgroundColor: Colors.blue,
                   foregroundColor: Colors.white,
                 ),
+                child: Text('Login'),
               ),
               TextButton(
                 onPressed: () {
@@ -133,6 +137,8 @@ class _FirstScreenState extends State<FirstScreen> {
 }
 
 class SecondScreen extends StatefulWidget {
+  const SecondScreen({super.key});
+
   @override
   _SecondScreenState createState() => _SecondScreenState();
 }
@@ -261,12 +267,12 @@ class _SecondScreenState extends State<SecondScreen> {
 
                   // Add registration logic here if validation passes
                 },
-                child: Text('Register'),
                 style: ElevatedButton.styleFrom(
                   minimumSize: Size(double.infinity, 50),
                   backgroundColor: Colors.blue,
                   foregroundColor: Colors.white,
                 ),
+                child: Text('Register'),
               ),
               TextButton(
                 onPressed: () {

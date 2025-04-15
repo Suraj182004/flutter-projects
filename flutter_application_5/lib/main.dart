@@ -12,6 +12,8 @@ class HomePage extends StatelessWidget {
   final TextEditingController _usernameController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
 
+  HomePage({super.key});
+
   void _submitForm(BuildContext context) {
     if (_formKey.currentState!.validate()) {
       ScaffoldMessenger.of(context).showSnackBar(

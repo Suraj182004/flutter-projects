@@ -8,7 +8,7 @@ void main() {
 }
 
 class HomePage extends StatelessWidget {
-  HomePage({Key? key}) : super(key: key);
+  HomePage({super.key});
 
   final List<String> products = ["Bed", "Sofa", "Chair"];
   final List<String> productdetail = ["King Size", "King Size", "King Size"];
